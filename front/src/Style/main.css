@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #000000;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 200px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+
+    header{
+        font-size: xx-large;
+        font-style: italic;
+    }
+  }
+
+  .box-1{
+    /* box-sizing: border-box ; */
+    height: 360px;
+    width: 360px ;
+    position:fixed; left: 17%;  right: 0%; top: 40%; 
+    background: #FFFFFF;
+    background: transparent;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* border-radius: 0%; */
+    background: url("./../Image/realistic-credit-card-design_23-2149126088.webp")  center ;
+    box-shadow:#FFFFFF;  
+  }
+  .box-1 :hover:not(.active){
+    background-color: #260303;
+    cursor: pointer;
+  }
+  
+
+  .box-2{
+    box-sizing: border-box;
+    height: 540px;
+    width: 790px;
+    position: fixed; left: 40%; right: 0%; top:30%; bottom: 1%;
+    border-radius: 10px;
+    background: #d08a8a;
+    }
+
+  .line1{
+    font-size: 40px;
+  }
+
+  .dash .all{
+   font-weight: 900;
+  }
+  
+
+
+  
+
+
+/* * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #000000;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: rgb(227, 230, 19);
+    /* #eee */
+
+
+/* header {
+	display: flex;
+	align-items: left;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header .h3{
+    margin-top: 50%;
+    padding-top: 50%;
+}
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+
+    
+    div.box1{
+        box-sizing: border-box;
+        height: 500px;
+    }
+
+    div.navbar{
+      margin-left: -100px;  
+    }
+} */ 
